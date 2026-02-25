@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">Krish.dev</div>
+                <ul class="nav-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <button class="theme-btn" id="themeToggle" type="button" aria-label="Toggle dark mode">Dark</button>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="hero reveal delay-1" id="home">
+            <div class="hero-bg" aria-hidden="true">
+                <span class="blob blob-a"></span>
+                <span class="blob blob-b"></span>
+                <span class="blob blob-c"></span>
+                <span class="pointer-glow"></span>
+            </div>
+            <div>
+                <h1>Hello, I'm <span>Krish Maheshwari</span><br />Frontend Developer</h1>
+                <p>
+                    I build clean and responsive web interfaces with a strong focus on usability,
+                    performance, and modern design.
+                </p>
+                <div class="cta">
+                    <a href="#projects" class="btn btn-primary">View Projects</a>
+                    <a href="#contact" class="btn btn-outline">Hire Me</a>
+                </div>
+            </div>
+
+            <div class="hero-card">
+                <img src="myself.jpeg" alt="Developer workspace" />
+                <p><strong>2+ years experience</strong> creating websites and web apps for startups and local businesses.</p>
+            </div>
+        </section>
+
+        <section id="about" class="reveal delay-2">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-box">
+                <p>
+                    I am a web developer passionate about crafting intuitive digital experiences.
+                    I enjoy turning ideas into scalable products using HTML, CSS, JavaScript, and React.
+                </p>
+                <div class="skills" id="skillsList">
+                    <article class="skill-item" data-level="9">
+                        <div class="skill-head">
+                            <h3>HTML5</h3>
+                            <p><span class="skill-value">0</span>/10</p>
+                        </div>
+                        <div class="skill-track">
+                            <span class="skill-fill"></span>
+                        </div>
+                    </article>
+                    <article class="skill-item" data-level="8">
+                        <div class="skill-head">
+                            <h3>CSS3</h3>
+                            <p><span class="skill-value">0</span>/10</p>
+                        </div>
+                        <div class="skill-track">
+                            <span class="skill-fill"></span>
+                        </div>
+                    </article>
+                    <article class="skill-item" data-level="8">
+                        <div class="skill-head">
+                            <h3>JavaScript</h3>
+                            <p><span class="skill-value">0</span>/10</p>
+                        </div>
+                        <div class="skill-track">
+                            <span class="skill-fill"></span>
+                        </div>
+                    </article>
+                    <article class="skill-item" data-level="7">
+                        <div class="skill-head">
+                            <h3>React</h3>
+                            <p><span class="skill-value">0</span>/10</p>
+                        </div>
+                        <div class="skill-track">
+                            <span class="skill-fill"></span>
+                        </div>
+                    </article>
+                    <article class="skill-item" data-level="7">
+                        <div class="skill-head">
+                            <h3>Node.js</h3>
+                            <p><span class="skill-value">0</span>/10</p>
+                        </div>
+                        <div class="skill-track">
+                            <span class="skill-fill"></span>
+                        </div>
+                    </article>
+                    <article class="skill-item" data-level="6">
+                        <div class="skill-head">
+                            <h3>MongoDB</h3>
+                            <p><span class="skill-value">0</span>/10</p>
+                        </div>
+                        <div class="skill-track">
+                            <span class="skill-fill"></span>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="reveal delay-3">
+            <h2 class="section-title">Projects</h2>
+            <div class="project-tree" id="projectTree">
+                <div class="tree-line" aria-hidden="true">
+                    <span class="tree-line-solid" id="treeLineSolid"></span>
+                </div>
+
+                <article class="project-node">
+                    <span class="node-dot" aria-hidden="true"></span>
+                    <div class="project-card">
+                        <img src="https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?auto=format&fit=crop&w=1200&q=80" alt="Portfolio website preview" />
+                        <div class="project-content">
+                            <h3>Portfolio Website</h3>
+                            <p>Personal branding website with playful design, smooth animations, and responsive layout.</p>
+                            <a href="#">Live Demo</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="project-node">
+                    <span class="node-dot" aria-hidden="true"></span>
+                    <div class="project-card">
+                        <img src="https://images.unsplash.com/photo-1555529669-e69e7aa0ba9a?auto=format&fit=crop&w=1200&q=80" alt="E-commerce project preview" />
+                        <div class="project-content">
+                            <h3>E-commerce UI</h3>
+                            <p>Shopping experience with reusable components, cart flow, and product-focused interface.</p>
+                            <a href="#">Live Demo</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="project-node">
+                    <span class="node-dot" aria-hidden="true"></span>
+                    <div class="project-card">
+                        <img src="https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b?auto=format&fit=crop&w=1200&q=80" alt="Task manager app preview" />
+                        <div class="project-content">
+                            <h3>Task Manager App</h3>
+                            <p>Task planning app with auth flow, CRUD operations, and progress tracking dashboards.</p>
+                            <a href="#">Live Demo</a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section id="contact" class="reveal delay-4">
+            <div class="contact">
+                <h2>Let's Work Together</h2>
+                <p>Email: <a href="mailto:krishmaheshwari197903@gmail.com">krishmaheshwari197903@gmail.com</a></p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Krish Maheshwari. All rights reserved.</p>
+    </footer>
+    <script src="index.js"></script>
+</body>
+</html>
